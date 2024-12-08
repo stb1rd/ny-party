@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css';
 import Image from 'next/image';
 import { bar } from '@/bar';
 import { Fragment } from 'react';
+import { BASE_PATH } from '.';
 
 const robotoCondensed = localFont({
   src: [
@@ -34,7 +35,7 @@ export default function Home() {
       <div className={`${styles.page} ${robotoCondensed.variable}`}>
         <main className={styles.main}>
           <header>
-            <Image className={styles.logo} src="/logo-w-text.svg" alt="" width={379} height={37} />
+            <Image className={styles.logo} src={`${BASE_PATH}/logo-w-text.svg`} alt="" width={379} height={37} />
           </header>
           {bar.map((barItem) => (
             <Fragment key={barItem.categoryName}>
@@ -47,7 +48,7 @@ export default function Home() {
                       {[...drinkItem.iconsPublic, ...(drinkItem.iconsBartender || [])].map((iconName) => (
                         <Image
                           key={iconName}
-                          src={`/icons/${iconName}.svg`}
+                          src={`${BASE_PATH}/icons/${iconName}.svg`}
                           className={styles.icon}
                           alt=""
                           width="30"
