@@ -22,6 +22,8 @@ const robotoCondensed = localFont({
   weight: '900',
 });
 
+export const BASE_PATH = 'https://stb1rd.github.io/ny-party';
+
 export default function Home() {
   return (
     <>
@@ -34,7 +36,7 @@ export default function Home() {
       <div className={`${styles.page} ${robotoCondensed.variable}`}>
         <main className={styles.main}>
           <header>
-            <Image className={styles.logo} src="/logo-w-text.svg" alt="" width={379} height={37} />
+            <Image className={styles.logo} src={`${BASE_PATH}/logo-w-text.svg`} alt="" width={379} height={37} />
           </header>
           {bar.map((barItem) => (
             <Fragment key={barItem.categoryName}>
@@ -47,7 +49,7 @@ export default function Home() {
                       {drinkItem.iconsPublic.map((iconName) => (
                         <Image
                           key={iconName}
-                          src={`/icons/${iconName}.svg`}
+                          src={`${BASE_PATH}/icons/${iconName}.svg`}
                           className={styles.icon}
                           alt=""
                           width="30"
