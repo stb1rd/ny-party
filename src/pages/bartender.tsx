@@ -44,7 +44,7 @@ export default function Home() {
                   <article key={drinkItem.title}>
                     <h3>{drinkItem.title}</h3>
                     <div>
-                      {drinkItem.iconsPublic.map((iconName) => (
+                      {[...drinkItem.iconsPublic, ...(drinkItem.iconsBartender || [])].map((iconName) => (
                         <Image
                           key={iconName}
                           src={`/icons/${iconName}.svg`}
@@ -56,7 +56,8 @@ export default function Home() {
                       ))}
                       <span>{drinkItem.tastes}</span>
                     </div>
-                    <p>{drinkItem.contents}</p>
+                    <div>{drinkItem.recipe}</div>
+                    {!!drinkItem.decoration && <p>{drinkItem.decoration}</p>}
                   </article>
                 ))}
               </section>

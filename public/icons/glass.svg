@@ -1,0 +1,21 @@
+<svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="30" height="36" fill="white" />
+  <path
+    d="M7.5 11.5L8.03571 19.9868L8.57143 23.5L9 26.9737C9.42857 28 11.5714 28.75 15 28.75C18.4286 28.75 20.5714 28 21 26.9737L21.4286 23.5L21.9643 19.9868L22.5 11.5"
+    stroke="black"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <ellipse cx="15" cy="20.5" rx="6" ry="1.5" stroke="black" stroke-width="1.5" />
+  <path
+    opacity="0.4"
+    d="M20.9927 26.5738C21.0315 26.3771 20.9149 26.1804 20.6496 25.9949C20.3842 25.8094 19.9754 25.6388 19.4463 25.4928C18.9173 25.3469 18.2784 25.2284 17.5662 25.1441C16.8539 25.0599 16.0823 25.0115 15.2953 25.0018C14.5083 24.9921 13.7214 25.0213 12.9795 25.0876C12.2376 25.1539 11.5552 25.2562 10.9713 25.3884C10.3874 25.5207 9.91345 25.6804 9.57646 25.8585C9.23946 26.0365 9.04605 26.2294 9.00727 26.4262"
+    stroke="black"
+    stroke-width="1.5"
+    stroke-linecap="round"
+  />
+  <ellipse cx="15" cy="11.5" rx="7.5" ry="1.5" stroke="black" stroke-width="1.5" />
+  <path d="M17.25 28.75C17.25 27.25 17.4 23.8 18 22" stroke="black" stroke-width="1.5" />
+  <path d="M12.75 28.75C12.75 27.25 12.6 23.8 12 22" stroke="black" stroke-width="1.5" />
+</svg>
